@@ -1,0 +1,1 @@
+This directory is a continuation of 0x0 handling more advanced tasks on singly linked lists.
