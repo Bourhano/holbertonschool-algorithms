@@ -6,7 +6,7 @@
  * free_listint - Frees a linked list
  * @head: ptr to the head of the list
  **/
-void free_listint(list_t *head)
+void free_listint(listint_t *head)
 {
 	if (head == 0)
 		return;
