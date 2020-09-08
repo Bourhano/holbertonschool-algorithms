@@ -8,7 +8,6 @@ main:	   	  mov       esi, message
 		  call printf
 		  mov ebx, 0      	 ; normal-exit code
 	          mov eax, 1      	 ; process-termination service
-	          int 0x80        	 ; linux kernel service
 
 	          section   .data
 message:	  db        "Hello, Holberton", 10 ; note the newline at the end
