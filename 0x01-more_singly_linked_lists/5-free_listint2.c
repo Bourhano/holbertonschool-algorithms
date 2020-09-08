@@ -21,7 +21,7 @@ void free_listint(listint_t *head)
  **/
 void free_listint2(listint_t **head)
 {
-	if (**head == 0)
+	if (head == 0)
 		return;
 	free_listint(*head);
 	*head = 0;
