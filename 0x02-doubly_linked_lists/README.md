@@ -1,0 +1,1 @@
+This directory has applications on the doubly linked lists and circular lists.
