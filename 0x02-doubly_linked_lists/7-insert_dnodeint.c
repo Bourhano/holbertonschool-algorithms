@@ -62,5 +62,5 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	node->prev = savedHead;
 	savedHead->next->prev = node;
 	savedHead->next = node;
-	return (*head);
+	return (*h);
 }
