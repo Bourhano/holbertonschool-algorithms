@@ -55,6 +55,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		savedHead->next->prev = savedHead;
 		free(savedHead->next);
 	}
-	free (savedHead);
+	free(savedHead);
 	return (1);
 }
