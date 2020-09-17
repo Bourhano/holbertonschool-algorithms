@@ -17,7 +17,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	if (newHead != 0)
 	{
 		newHead->n = n;
-		if (*head)
+		if (*head != 0)
 			newHead->next = *head;
 		else
 			newHead->next = 0;
