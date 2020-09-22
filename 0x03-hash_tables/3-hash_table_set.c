@@ -19,7 +19,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	idx = key_index((const unsigned char *)key, ht->size);
 	hn = malloc(sizeof(hash_node_t));
 	hn->key = strdup(key);
-	if(hn->key == 0)
+	if (hn->key == 0)
 	{
 		free(hn);
 		return (0);
