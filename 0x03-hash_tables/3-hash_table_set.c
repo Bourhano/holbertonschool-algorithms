@@ -19,10 +19,20 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	idx = key_index((const unsigned char *)key, ht->size);
 	hn = malloc(sizeof(hash_node_t));
 	hn->key = strdup(key);
+	if(hn->key == 0)
+	{
+		free(hn);
+		return (0);
+	}
 	hn->value = strdup(value);
 	if (ht->array[idx] == 0)
 	{
 		ht->array[idx] = hn;
+	}
+	else if (strcmp(ht->array[idx]->key, key) == 0)
+	{
+		ht->array[idx]->value = strdup(value);
+		free(hn);
 	}
 	else
 	{
