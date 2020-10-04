@@ -1,0 +1,1 @@
+This directory contains tasks about graphs and their compositions, implemented with an adjacency linked list.
