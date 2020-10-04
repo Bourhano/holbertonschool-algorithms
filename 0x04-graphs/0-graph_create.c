@@ -1,12 +1,12 @@
 #include "graphs.h"
 
 /**
- * graph_create - Allocate memory to store a graph_t structure and initialize it
+ * graph_create - Allocate memory to store a graph_t structure & initialize it
  * Return: pointer to the allocated structure, or NULL on failure
  **/
 graph_t *graph_create(void)
 {
-        graph_t *graph;
+	graph_t *graph;
 
 	graph = malloc(sizeof(graph_t));
 	if (!graph)
