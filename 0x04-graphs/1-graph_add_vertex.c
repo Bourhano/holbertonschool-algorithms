@@ -27,7 +27,10 @@ vertex_t *graph_add_vertex(graph_t *graph, const char *str)
 				node = node->next;
 		}
 		if (exists)
+		{
+			free(node);
 			return (0);
+		}
 	}
 	vertex = malloc(sizeof(vertex_t));
 	if (!vertex)
