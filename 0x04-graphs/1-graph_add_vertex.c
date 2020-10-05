@@ -28,7 +28,7 @@ vertex_t *graph_add_vertex(graph_t *graph, const char *str)
 		}
 		if (exists)
 		{
-			free(node);
+			/*free(node);*/
 			return (0);
 		}
 	}
