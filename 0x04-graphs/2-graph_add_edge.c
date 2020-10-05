@@ -30,7 +30,6 @@ int graph_add_edge(graph_t *graph, const char *src, const char *dest,
 		node = node->next;
 	if (node == NULL)
 		return (0);
-	printf("found the node\n");
 	if (node->nb_edges != 0)
 	{
 		destnode = node->edges;
@@ -42,7 +41,6 @@ int graph_add_edge(graph_t *graph, const char *src, const char *dest,
 		}
 		if (destnode == 0)
 			return (0);
-		printf("found the edge, allocating\n");
 	}
 	edge = malloc(sizeof(edge_t));
 	if (edge == 0)
@@ -51,7 +49,7 @@ int graph_add_edge(graph_t *graph, const char *src, const char *dest,
 	if (node->nb_edges == 1)
 		node->edges = edge;
 	else
-	        aux->next = edge;
+		aux->next = edge;
 	edge->dest = (vertex_t *)destnode;
 	edge->next = NULL;
 	return (1);
