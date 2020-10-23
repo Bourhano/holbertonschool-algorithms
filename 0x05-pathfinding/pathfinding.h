@@ -25,7 +25,10 @@
 		}
 #define Euclidean_dst(x1, y1, x2, y2) \
 	(sqrt(pow((x2) - (x1), 2) + pow((y2) - (y1), 2)))
-queue_t *backtracking_array(char **map, int rows, int cols, point_t const *start, point_t const *target);
-queue_t *backtracking_graph(graph_t *graph, vertex_t const *start, vertex_t const *target);
-queue_t *dijkstra_graph(graph_t *graph, vertex_t const *start, vertex_t const *target);
+queue_t *backtracking_array(char **map, int rows, int cols,
+			    point_t const *start, point_t const *target);
+queue_t *backtracking_graph(graph_t *graph, vertex_t const *start,
+			    vertex_t const *target);
+queue_t *dijkstra_graph(graph_t *graph, vertex_t const *start,
+			vertex_t const *target);
 #endif
